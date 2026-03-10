@@ -1,0 +1,13 @@
+namespace GeoCare.Core.Entities;
+
+// Enum definido a nivel de namespace (fuera de cualquier clase)
+// para que AppDbContext y cualquier otro archivo puedan referenciarlo
+// directamente como SpecialtyCategory.Basic sin necesidad de calificar
+// con el nombre de la clase: Specialty.CategorySpecialty.Basic
+public enum SpecialtyCategory
+{
+    Basic,          // Medicina General, Urgencias, Pediatría…
+    Surgical,       // Cirugía General, Traumatología…
+    Diagnostic,     // Radiología, Laboratorio, Patología…
+    Subspecialty    // Cardiología, Oncología, Neurología…
+}
